@@ -1,0 +1,489 @@
+*{
+    font-family: 'poppins',sans-serif;
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+    background-color: white;
+  }
+  body
+{
+    background-color: white;
+}
+  
+  /*jorim heading start*/
+  
+  h1{
+    text-align: center;
+    padding-top:25px;
+    color:rgb(14, 102, 129);
+    font-size: 42px;
+    font-family: Arial, sans-serif;
+  }
+  /*  joirm heading ends */
+  
+  /* logo */
+  .logo
+  {
+      cursor: pointer;
+      width:200px;
+      height:140px;
+  }
+  
+  /*header start*/
+  .navbar
+  {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .navdiv
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .list{
+    list-style: none;
+    display: inline-block;
+    padding: 14px;
+  }
+  .list a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+    background-color:rgb(14, 102, 129); 
+    color: white;
+    border-color: black;
+    border-radius: 12px;
+    padding: 12px;
+  }
+  
+  .list .home-but:hover ,.abt-but:hover ,.serv-but:hover,.test-but:hover ,.gal-but:hover ,.cont-but:hover{
+    box-shadow:5px 5px 10px rgba(0,0,0,0.55);
+    background-color: rgb(103, 133, 146);
+    opacity:0.9;
+  
+    color: white;
+  
+  }
+  
+  /* header ends */
+  
+  /* home start*/
+  .hero
+  {
+    font-family: Arial, sans-serif;
+      margin: 0;
+      padding-right: 60;
+      background-image: url('bg-img.avif');
+      cursor: pointer; /* Replace 'background-image.jpg' with your image path */
+      background-size: cover;
+      color: black;
+      font-size: 22px;
+      padding-top: 0px;
+      text-align: center;
+      display: flex;
+     
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+  }
+  .hero-title
+  {
+    color: rgb(22, 66, 97);
+    font-style:cursive;
+    padding-bottom: 3px;
+  
+  }
+  .hero-para
+  {
+    font-size: 21px;
+  }
+  
+  /*home end */
+  
+  
+   /* About start */
+  
+   .about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;  
+  }
+  
+  .about-head
+  {
+   text-align: center;
+   color: rgb(22, 66, 97);
+   font-style: bold;
+   font-size: 30px;
+   text-decoration: underline;
+  
+  }
+  
+  .about-para
+  {
+   font-size: 21px;
+   justify-content: center;
+   width: 70%; 
+   text-align: center;
+   padding-left: 420px;
+   padding-top: 10px;
+   text-align: justify;
+  }
+    /* About end */
+  
+  
+  
+  /* vision start */
+  
+  .vision-head
+  {
+   text-align: center;
+   color: rgb(22, 66, 97);
+   font-style: bold;
+   font-size: 30px;
+   text-decoration: underline;
+  }
+  
+  .vision-para
+  {
+   font-size: 21px;
+   justify-content: center;
+   width: 70%; 
+   text-align: center;
+   padding-left: 420px;
+   padding-top: 10px;
+   text-align: justify;
+  }
+  
+  /* vision end */
+  
+  .cards-grid {
+    display: flex;
+    grid-gap: 50px;
+    padding-bottom: 60px;
+  }
+  
+  /* FLIP CARD  start */
+  .flip-card {
+    width: 500px;
+    height: 504px;
+    cursor: pointer;
+    margin:10px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+    transform-style: preserve-3d;
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-left: 200px;
+  }
+  .flip-card-back {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 32px;
+    background-color: rgb(29, 104, 158);
+    transform: rotateY(180deg);
+    color:white;
+    font-size: 17px;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
+  /* flip card end */
+  
+  /*our services head*/
+  .serv-head
+  {
+   text-align: center;
+   color: rgb(22, 66, 97);
+   font-style: bold;
+   font-size: 30px;
+   text-decoration: underline;
+  
+  }
+  /* service end*/
+  
+  /*testimonial start */
+  
+  .test-head
+  {
+   text-align: center;
+   color: rgb(22, 66, 97);
+   font-style: bold;
+   font-size: 30px;
+   text-decoration: underline;
+  
+  }
+  .test{
+    width: 600px;
+    height: 250px;
+    padding: 25px;
+    border: 5px solid rgb(22, 66, 97);
+    border-radius: 34px;
+    margin: 20px;
+    background-color: rgb(155, 180, 197);
+   }
+  
+   .test-author{
+    text-align: center;
+    align-items: center;
+    padding:30px;
+    font-size: 20px;
+    font-family:cursive;
+    transition: all 0.3s ease;
+   }
+   .test:hover {
+    transform: scale(0.9); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  
+  }
+  
+  /*testimonial end*/
+  
+  /* gallery start */
+  
+  .gal-head
+  {
+   text-align: center;
+   color: rgb(22, 66, 97);
+   font-style: bold;
+   font-size: 30px;
+   text-decoration: underline;
+  }
+  
+  .gal img
+  {
+    padding-left:240px;
+    padding-bottom: 50px;
+    height:350px;
+    width:550px;
+    cursor: pointer;
+  
+  }
+  /* gallery end */
+
+  /*contact start */
+.cont-head
+{
+    text-align: center;
+   color: rgb(22, 66, 97);
+   font-style: bold;
+   font-size: 30px;
+   text-decoration: underline;
+}
+.contact {
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact .contact_data {
+    width: 600px;
+    border-radius: 02px;
+    border: 6px solid rgb(22, 66, 97);
+    padding:10px;
+    margin: 0 10px;
+  }
+  
+ 
+  
+  .contact .contact_data form input,
+  textarea {
+    width: 95%;
+    margin: 5px 0 0 10px;
+    padding: 07px 10px;
+    border: 1px solid #b3b0b0;
+    font-size: 1rem;
+    border-radius: 05px;
+  }
+  
+  
+  .contact .contact_data h2 {
+    margin: 1.5rem;
+    color:rgb(22,66,97);
+    text-decoration: none;
+  }
+  
+  .contact .contact_data label {
+    display: block;
+    padding-top: 15px;
+    padding-left: 14px;
+  }
+  
+  .contact .contact_data button {
+    margin: 20px 10px;
+    border: none;
+    padding: 10px 20px;
+    background: rgb(22, 66, 97);
+    color:white;
+    font-size: 1rem;
+    border-radius: 05px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .contact .contact_data button:hover {
+    background: rgb(37, 119, 37);
+   
+    color: rgb(255, 255, 255);
+  }
+/*contact end */
+
+/*want to know more  start*/
+.final a
+{
+    text-decoration:underline;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(22,66,97);
+    padding-bottom: 10px;
+    padding-left: 750px;
+}
+.finalbut
+{
+    background-color: rgb(22,66,97);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.finalbut:hover{
+    color:white;
+    background:rgb(22, 137, 204);
+}
+/*want to know more  end*/
+ 
+/* footer start */
+
+footer{
+    background:rgb(22,66,97);
+    height:auto;
+    width:100vw;
+    padding-top: 3px;
+    color:black;
+    border-top: 3px pink;
+}
+.foot
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top:24px;
+    
+
+}
+.foot h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration:underline;
+    color: rgb(22,66,97);
+    font-weight: bold;
+}
+
+.foot p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.icons
+{
+   
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+   
+   
+}
+.icons li{
+    margin: 0 10px;
+    cursor: pointer;
+ 
+
+}
+
+.icons img{
+    text-decoration: none;
+    color: rgb(22,66,97);
+ 
+}
+.icons li img i{
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+    
+    
+}
+
+.footbot
+{
+    background: #575454;
+    width: 100vw;
+ 
+    text-align: center;
+    color: black;
+}
+.footbot p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    word-spacing: 2px;
+    font-size: 22px;
+  
+}
+
+.footbot .me
+{
+    text-transform: uppercase;
+    opacity: 1;
+    font-weight: 200;
+    color: rgb(22,66,97);
+    font-weight: bold;
+}
+/*footer ends */
+
+/* my linked in starts */
+.myicon
+{
+    background-color: white;
+    cursor: pointer;
+}
+
+/* my linked in ends */
